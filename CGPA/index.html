@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UIU CGPA-CALCULATOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" href="image/uiulogo2.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-gin">
+
+  </div>
+
+    <nav class="navbar navbar-expand-sm justify-content-center ">
+  
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand" href="javascript:void(0)">
+                    <img class="logo" src="image/logo.png" alt="uiu-logo" srcset="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse  navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link" ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="personalInfo.html" class="nav-link" ">About Me</a>        
+                    </li>
+                    <li class="nav-item">
+                      <a href="http://www.uiu.ac.bd" class="nav-link" >UIU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="grading.html" class="nav-link" >UIU Grading System</a>
+                      </li>
+                  </ul>
+                
+                </div>
+              </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="main-content">
+                    <h4>CGPA Calculator</h4>
+                </div>
+
+                <div id="result" class="row">
+                    <div class="col-sm-12">
+                        <h5>Result</h5>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="est_gpa" class="form-label">Credit Completed:</label>
+                            <input type="text" class="form-control" id="est_cradit" >      
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="est_gpa" class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="est_gpa" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="est_cgpa" class="form-label">CGPA:</label>
+                            <input type="text" class="form-control" id="est_cgpa" >      
+                        </div>
+                    </div>
+                </div>
+
+                <div id="previous_smtr" class="row">
+                    <div class="col-sm-12 ">
+                        <h5>Previous Semester Information</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label  class="form-label">Credit Completed:</label>
+                            <input type="text" class="form-control" id="CreditCompleted" value="0">      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label curntCgpa">Current CGPA:</label>
+                            <input type="text" class="form-control" id="CurrentCGPA" value="0">      
+                        </div>
+                    </div>
+                </div>
+
+                <div id="current_smstr" class="row">
+                    <div class="col-sm-12 ">
+                        <h5>Current Semester Information</h5>
+                        <hr>
+                    </div> 
+                </div>
+
+                <div id="current_sem_course_seletor" class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group ">
+                            <label for="current_sem_crs">Course Taken in Current Semester :</label>
+                            <select class="form-control " id="current_sem_course">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Course1" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 1</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit1" placeholder="Cradit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course2" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 2</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit2" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa2" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+
+                <div id="Course3" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 3</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit3" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa3" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course4" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 4</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit4" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa4" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course5" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 5</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit5" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa5" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+
+                <div id="Course6" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 6</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit6" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa6" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course7" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 7</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit7" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa7" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course8" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 8</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit8" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa8" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course9" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 9</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit9" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa9" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course10" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 10</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Credit:</label>
+                            <input type="text" class="form-control" id="cradit10" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa10" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course11" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 11</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Cradit:</label>
+                            <input type="text" class="form-control" id="cradit11" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa11" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+                <div id="Course12" class="row">
+                    <div class="col-sm-12">
+                        <h5>Course 12</h5>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Cradit:</label>
+                            <input type="text" class="form-control" id="cradit12" placeholder="Credit" >      
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">GPA:</label>
+                            <input type="text" class="form-control" id="gpa12" placeholder="GPA" >      
+                        </div>
+                    </div>
+                 
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div align="center">
+                  
+                            <button type="button" id="next" class="btn btn-outline-success btn-block">Next</button>
+                            <button type="button" id="calculate_btn" class="btn btn-outline-success btn-block">Calculate CGPA</button>
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+          </div>
+
+      
+      </div>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

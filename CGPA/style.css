@@ -1,0 +1,88 @@
+.navbar {
+    background-color: #fff !important;
+}
+body{
+    background-color: #f1e9e9 !important;
+}
+
+.navbar-toggler {
+    position: relative;
+    float: right;
+}
+
+.logo {
+    width: 245px;
+   
+}
+
+.top-gin {
+    height: 10px;
+    background-color: #f68b1f !important;
+}
+
+.main-content h4{
+    text-align: center;
+    padding: 10px;
+}
+
+.card{
+    margin-top: 5px;
+}
+
+.col-sm-12 h5{
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+
+
+button.btn.btn-outline-success.btn-block {
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+    .container-fluid {
+        max-width: 700px;
+        margin: auto;
+    }
+   
+}
+
+@media only screen and (max-width: 896px) {
+    .container-fluid {
+        max-width: 700px;
+        margin: auto;
+    }
+   
+}
+
+@media only screen and (max-width: 635px) {
+    .container-fluid {
+        max-width: 600px;
+        margin: auto;
+        font-size: 13px;
+    }
+    .logo {
+        width: 210px;
+       
+    }
+    .curntCgpa{
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .container-fluid {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .main-content h4{
+        text-align: center;
+        padding: 10px;
+    }
+}
